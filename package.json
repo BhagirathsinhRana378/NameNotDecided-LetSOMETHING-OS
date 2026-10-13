@@ -1,0 +1,20 @@
+{
+  "name": "browos",
+  "version": "0.3.0",
+  "description": "A premium, lightweight, customizable desktop environment for Brave and Chromium browsers.",
+  "type": "module",
+  "scripts": {
+    "test": "node --test tests/*.test.js",
+    "build": "node scripts/build-check.js",
+    "lint": "node scripts/build-check.js"
+  },
+  "keywords": [
+    "desktop",
+    "browser",
+    "extension",
+    "brave",
+    "workspace"
+  ],
+  "author": "BrowOS Team",
+  "license": "MIT"
+}

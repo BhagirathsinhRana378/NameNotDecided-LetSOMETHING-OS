@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "BrowOS",
+  "version": "0.2.0",
+  "description": "A desktop environment that lives in your new tab: windows, dock, files, terminal and web apps.",
+  "icons": { "16": "icons/16.png", "48": "icons/48.png", "128": "icons/128.png" },
+  "chrome_url_overrides": { "newtab": "newtab.html" },
+  "background": { "service_worker": "js/background.js", "type": "module" },
+  "permissions": ["storage", "unlimitedStorage", "declarativeNetRequest", "system.memory"],
+  "host_permissions": [
+    "https://www.photopea.com/*",
+    "https://excalidraw.com/*",
+    "https://app.diagrams.net/*",
+    "https://squoosh.app/*",
+    "https://open.spotify.com/*",
+    "https://*.wikipedia.org/*"
+  ],
+  "optional_host_permissions": ["https://*/*"]
+}
